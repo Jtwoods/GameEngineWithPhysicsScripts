@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Events>
+
+	<Event type="Collision" value="Collision">
+		<Parameters>Position, Velocity, BoundingBox, CollisionType, ObjectMap</Parameters>
+	</Event>  
+	<Event type="KeyPressed" value="KeyPressed">
+		<Parameters>Velocity, Acceleration, OnTop, MAX_ACCEL, JUMP_VEL</Parameters>
+	</Event>
+	<Event type="KeyReleased" value="KeyReleased">
+		<Parameters>Acceleration</Parameters>
+	</Event>
+	<Event type="OnTop" value="OnTop">
+		<Parameters>OnTop, Position, BoundingBox, ObjectMap, Velocity</Parameters>
+	</Event>
+	
+	<Event type="Spawn" value="Spawn">
+		<Parameters>Position</Parameters>
+	</Event>
+	
+	<Event type="Death" value="Death">
+		<Parameters>Alive, Position, ObjectMap</Parameters>
+	</Event>
+	<Event type="SpawnNew" value="SpawnNew">
+		<Parameters>ObjectMap</Parameters>
+	</Event>
+	
+</Events>

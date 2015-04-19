@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Actions>
+
+	<Action type="Physics" value="RangedMovement">
+		<Parameters>Velocity, Position, Range, BoundingBox</Parameters>
+	</Action>
+	
+	<Action type="Physics" value="Gravity">
+		<Parameters>Acceleration, OnTop</Parameters>
+	</Action> 
+	
+	<Action type="Physics" value="Accelerations">
+		<Parameters>Velocity, Acceleration, Position</Parameters>
+	</Action>
+	
+	<Action type="Physics" value="Drag">
+		<Parameters>Velocity, Acceleration, onTop</Parameters>
+	</Action>
+	
+	<Action type="Physics" value="Collisions">
+		<Parameters>Position, BoundingBox, ObjectMap</Parameters>
+	</Action>
+
+</Actions>

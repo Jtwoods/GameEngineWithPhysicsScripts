@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GameObjects>
+
+	<GameObject GUID="SomethingMoving">
+		<Property type="Velocity">
+			<Parameter type="PVector">0, 0</Parameter>
+		</Property>
+		<Property type="Acceleration">
+			<Parameter type="PVector">0, 0</Parameter>
+		</Property>
+		<Property type="OnTop">
+			<Parameter type="Bool">false</Parameter>
+		</Property>
+		<Property type="MAX_ACCEL">
+			<Parameter type="Float">.0025</Parameter>
+		</Property>
+		<Property type="JUMP_VEL">
+			<Parameter type="Float">-1.2</Parameter>
+		</Property>
+		<Property type="Position">
+			<Parameter type="Float">200</Parameter>
+			<Parameter type="Float">500</Parameter>
+		</Property>
+		<Property type="Color">
+			<Parameter type="RandomInt">255</Parameter>
+			<Parameter type="RandomInt">255</Parameter>
+			<Parameter type="RandomInt">255</Parameter>
+		</Property>
+		<Property type="Range">
+			<Parameter type="Float">1</Parameter>
+			<Parameter type="Float">1000</Parameter>
+			<Parameter type="Float">0</Parameter>
+			<Parameter type="Float">10000</Parameter>
+		</Property>
+		<Property type="BoundingBox">
+			<Parameter type="Rectangle">20, 20</Parameter>
+		</Property>
+		<Property type="Representation">
+			<Parameter type="Text">defaultImage.png</Parameter>
+		</Property>
+		<Property type="CollisionType">
+			<Parameter type="Text">Character</Parameter>
+		</Property>
+		<Property type="Accelerations">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+		<Property type="Gravity">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+		<Property type="Drag">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+		<Property type="Collisions">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+		<Property type="RangedMovement">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+		<Property type="Alive">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+	</GameObject>
+	
+	<GameObject GUID="SomethingMoving3">
+		<Property type="Velocity">
+			<Parameter type="PVector">.2, -.03</Parameter>
+		</Property>
+		<Property type="Acceleration">
+			<Parameter type="PVector">0, 0</Parameter>
+		</Property>
+		<Property type="BoundingBox">
+			<Parameter type="Rectangle">23, 23</Parameter>
+		</Property>
+		<Property type="Position">
+			<Parameter type="Float">400</Parameter>
+			<Parameter type="Float">200</Parameter>
+		</Property>
+		<Property type="Color">
+			<Parameter type="RandomInt">255</Parameter>
+			<Parameter type="RandomInt">255</Parameter>
+			<Parameter type="RandomInt">255</Parameter>
+		</Property>
+		<Property type="Range">
+			<Parameter type="Float">1</Parameter>
+			<Parameter type="Float">1000</Parameter>
+			<Parameter type="Float">0</Parameter>
+			<Parameter type="Float">10000</Parameter>
+		</Property>
+		<Property type="OnTop">
+			<Parameter type="Bool">false</Parameter>
+		</Property>
+		<Property type="Representation">
+			<Parameter type="Text">defaultTwo.png</Parameter>
+		</Property>
+		<Property type="Accelerations">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+		<Property type="RangedMovement">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+
+		<Property type="Gravity">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+		<Property type="Collisions">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+		<Property type="CollisionType">
+			<Parameter type="Text">Character</Parameter>
+		</Property>
+		<Property type="Drag">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+		<Property type="Alive">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+	</GameObject>
+	
+
+	<GameObject GUID="Obstacle">
+		<Property type="BoundingBox">
+			<Parameter type="Rectangle">300, 100</Parameter>
+		</Property>
+		<Property type="Position">
+			<Parameter type="Float">300</Parameter>
+			<Parameter type="Float">400</Parameter>
+		</Property>
+		<Property type="CollisionType">
+			<Parameter type="Text">Obstacle</Parameter>
+		</Property>
+		<Property type="Velocity">
+			<Parameter type="PVector">0, 0</Parameter>
+		</Property>
+		<Property type="Collisions">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+	</GameObject>
+
+	
+	<GameObject GUID="Obstacle1">
+		<Property type="BoundingBox">
+			<Parameter type="Rectangle">300, 100</Parameter>
+		</Property>
+		<Property type="Position">
+			<Parameter type="Float">600</Parameter>
+			<Parameter type="Float">400</Parameter>
+		</Property>
+		<Property type="CollisionType">
+			<Parameter type="Text">Obstacle</Parameter>
+		</Property>
+		<Property type="Velocity">
+			<Parameter type="PVector">-.2, .1</Parameter>
+		</Property>
+		<Property type="Collisions">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+		<Property type="Range">
+			<Parameter type="Float">600</Parameter>
+			<Parameter type="Float">800</Parameter>
+			<Parameter type="Float">300</Parameter>
+			<Parameter type="Float">400</Parameter>
+		</Property>
+		<Property type="Acceleration">
+			<Parameter type="PVector">0, 0</Parameter>
+		</Property>
+		<Property type="RangedMovement">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+		<Property type="Accelerations">
+			<Parameter type="Bool">true</Parameter>
+		</Property>			
+	</GameObject>
+	
+	
+	<GameObject GUID="Obstacle2">
+		<Property type="BoundingBox">
+			<Parameter type="Rectangle">2000, 300</Parameter>
+		</Property>
+		<Property type="Position">
+			<Parameter type="Float">200</Parameter>
+			<Parameter type="Float">700</Parameter>
+		</Property>
+		<Property type="CollisionType">
+			<Parameter type="Text">Obstacle</Parameter>
+		</Property>
+		<Property type="Velocity">
+			<Parameter type="PVector">0, 0</Parameter>
+		</Property>
+		<Property type="Collisions">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+	</GameObject>
+	
+	<GameObject GUID="SpawnPoint">
+		<Property type="Position">
+			<Parameter type="Float">600</Parameter>
+			<Parameter type="Float">100</Parameter>
+		</Property>
+		<Property type="SpawnPoint">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+	</GameObject>
+	
+	<GameObject GUID="DeathZone">
+		<Property type="BoundingBox">
+			<Parameter type="Rectangle">500, 500</Parameter>
+		</Property>
+		<Property type="Position">
+			<Parameter type="Float">0</Parameter>
+			<Parameter type="Float">0</Parameter>
+		</Property>
+		<Property type="Color">
+			<Parameter type="Int">255</Parameter>
+			<Parameter type="Int">0</Parameter>
+			<Parameter type="Int">0</Parameter>
+		</Property>
+		<Property type="CollisionType">
+			<Parameter type="Text">DeathZone</Parameter>
+		</Property>
+		<Property type="Velocity">
+			<Parameter type="PVector">0, 0</Parameter>
+		</Property>
+		<Property type="Collisions">
+			<Parameter type="Bool">true</Parameter>
+		</Property>
+	</GameObject>
+
+</GameObjects>
